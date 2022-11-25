@@ -1,0 +1,155 @@
+/*------- HEADER --------*/
+
+.right_nav{
+    text-decoration: none;
+    color: #836be2;
+    margin-left: 8.5rem;
+}
+.right_nav:hover{
+    color: #836be2;
+}
+.left_nav{
+    margin-right: 100px;
+}
+.mouseover{
+    text-decoration: none;
+    color: #4e4e4e;
+    margin: 15px;
+    display: block;
+}
+.mouseover:hover{
+    color: #836be2;
+}
+
+.box{
+    box-shadow: 0 0 15px -5px rgb(0 0 0 / 30%);
+    height: 100px;
+    width: 300px;
+    display: flex;
+}
+.slider{
+    display: none;
+}
+.sidebar{
+    text-decoration: none;
+    color: #4e4e4e;
+}
+.sidebar:hover{
+    color: #836be2;
+}
+
+@media (max-width:970px){
+   .mouseover{
+        display: none;
+   }
+
+   .right_nav{
+        position: relative;
+        left: 18%;
+        top: 5px;
+   }
+   .slider{
+        display: block;
+   }
+   .menu{
+        font-size: 26px;
+        position: absolute;
+        top: 20px;
+        left: 50px;
+   }
+}
+
+/*------- HOME --------*/
+
+.main_home{
+    display: flex;
+    justify-content: space-around;
+}
+.right_main{
+    text-align: start;
+}
+.imgg{
+    height: 35vh;
+    margin-top: 120px;
+    animation-name: abc;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes abc {
+    form{margin-top: 100px;}
+    to{margin-top: 150px;}
+}
+
+.fb{
+    color: #2f2e35;
+    border-radius: 50%; 
+    font-size: 1.3rem;
+    padding: 0.7rem 1rem;
+    box-shadow: inset 0px 5px 15px -5px #ddd,0px 5px 15px -5px #ddd;
+    transition-property: all;
+    transition-duration: 0.6s;
+    
+}
+.fb:hover{
+    color: white;
+    background-color: blue;
+}
+.insta{
+    margin-left: 30px;
+    color: #2f2e35;
+    border-radius: 50%; 
+    font-size: 1.6rem;
+    padding: 0.6rem 0.7rem;
+    box-shadow: inset 0px 5px 15px -5px #ddd,0px 5px 15px -5px #ddd;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.insta:hover{
+    background-color: red;
+    color: white;
+}
+.git{
+    margin-left: 30px;
+    color: #2f2e35;
+    border-radius: 50%; 
+    font-size: 1.6rem;
+    padding: 0.6rem 0.7rem;
+    box-shadow: inset 0px 5px 15px -5px #ddd,0px 5px 15px -5px #ddd;
+    transition-property: all;
+    transition-duration: 0.6s;
+}
+.git:hover{
+    color: white;
+    background-color: black;
+}
+.explore{
+    margin-top: 30px;
+    text-decoration: none;  
+    border: solid 2px #836be2;
+    border-radius: 30px;
+    padding: 11px;
+    width: 150px;
+    color: #836be2;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.explore:hover{
+    background-color: #836be2;
+    color: white;
+}
+
+@media (max-width:970px){
+    .main_home{
+        display: block;
+    }
+    .right_main{
+        text-align: center;
+    }
+    .imgg{
+        height: 20vh;
+        display: flex;
+        margin: auto;
+        margin-top: 10px;
+    }  
+ }
