@@ -1,11 +1,11 @@
 import React from "react";
+import "./Header.css";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
 import List from "@mui/material/List";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -56,16 +56,6 @@ const Header = () => {
             Contact
           </NavLink>
         </ListItem>
-        <ListItem>
-          <NavLink to="/login" className="sidebar">
-            Login
-          </NavLink>
-        </ListItem>
-        <ListItem>
-          <NavLink to="/register" className="sidebar">
-            Register
-          </NavLink>
-        </ListItem>
       </List>
     </Box>
   );
@@ -92,27 +82,23 @@ const Header = () => {
               </React.Fragment>
             ))}
           </div>
+
           <NavLink to="/" className="right_nav">
             <h1>YASH</h1>
           </NavLink>
+
           <Nav className="left_nav">
-            <NavLink to="/" className="mouseover">
+            <NavLink to="/" className="pagesName">
               Home
             </NavLink>
-            <NavLink to="/about" className="mouseover">
+            <NavLink to="/about" className="pagesName">
               About
             </NavLink>
-            <NavLink to="/project" className="mouseover">
+            <NavLink to="/project" className="pagesName">
               Projects
             </NavLink>
-            <NavLink to="/contact" className="mouseover">
+            <NavLink to="/contact" className="pagesName">
               Contact
-            </NavLink>
-            <NavLink to="/login" className="mouseover">
-              Login
-            </NavLink>
-            <NavLink to="/register" className="mouseover">
-              Register
             </NavLink>
           </Nav>
         </Container>

@@ -1,0 +1,60 @@
+.FirstDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.projectImg {
+  height: 450px;
+}
+
+.projectTextPerentDiv {
+  width: 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.projectText {
+  font-size: 46px;
+  font-weight: 600;
+  color: #836be2;
+}
+
+.projectLineText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #5a4f82c5;
+  line-height: 30px;
+}
+
+.projectDiv {
+  background-color: whitesmoke;
+}
+
+.projectName {
+  font-size: 36px;
+  font-weight: 600;
+  color: #836be2;
+}
+
+.projectDiscription {
+  font-size: 18px;
+  font-weight: 600;
+  color: #5a4f82c5;
+  line-height: 30px;
+}
+
+.lenLogoDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.lenLogo {
+  max-height: 50px;
+  width: 15%;
+  margin-top: 40px;
+}

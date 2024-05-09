@@ -58,44 +58,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
-        <div
-          style={{ fontSize: "28px", fontWeight: "400" }}
-          className="justify-content-center d-flex mt-5 mb-5"
-        >
-          Get In Touch
-        </div>
-
-        <div className="m-auto">
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="text" placeholder="Your Name" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Your Email" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="text" placeholder="Your Number" />
-            </Form.Group>
-            <InputGroup>
-              <Form.Control
-                as="textarea"
-                rows="5"
-                aria-label="With textarea"
-                placeholder="Message"
-              />
-            </InputGroup>
-
-            <Button
-              variant="primary"
-              type="submit"
-              className="mt-3"
-              style={{ fontSize: "20px" }}
-            >
-              Submit
-            </Button>
-          </Form>
-        </div>
       </div>
     </>
   );

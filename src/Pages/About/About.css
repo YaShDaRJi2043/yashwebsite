@@ -1,0 +1,202 @@
+.FirstDiv {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 70px;
+}
+
+.mirrorImg {
+  height: 450px;
+}
+
+.AboutMeTextPerentDiv {
+  width: 35%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.AboutMeText {
+  font-size: 46px;
+  font-weight: 600;
+  color: #836be2;
+}
+
+.AboutMeLineText {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #5a4f82c5;
+  line-height: 30px;
+}
+
+.AccordionDiv {
+  padding: 0 80px;
+  margin-top: 110px;
+}
+
+.Accordion :focus {
+  outline: 0 !important;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+  background-color: transparent;
+}
+
+.EducationDetailMainDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.clgLogo {
+  height: 150px;
+  border: solid 3px black;
+  border-radius: 50%;
+}
+
+.bubble {
+  position: relative;
+  width: 73%;
+  height: 120px;
+  background: whitesmoke;
+  border-radius: 10px;
+  padding: 0 30px;
+}
+
+.bubble1 {
+  @extend .bubble;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 30%;
+    width: 0;
+    height: 0;
+    border: 13px solid transparent;
+    border-right-color: whitesmoke;
+    border-left: 0;
+    margin-top: -13px;
+    margin-left: -12px;
+  }
+}
+
+.clgName {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.clgYear {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: end;
+  color: darkgray;
+}
+
+.courceName {
+  font-size: 20px;
+  color: #836be2;
+}
+
+.ExperienceDiv {
+  background-color: whitesmoke;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+.work {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.compantName {
+  font-size: 18px;
+  font-weight: 500;
+  color: #836be2;
+}
+
+.whatIDO {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #5a4f82c5;
+  line-height: 20px;
+}
+
+@media (max-width: 970px) {
+  .FirstDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .mirrorImg {
+    height: 180px;
+    width: 100%;
+  }
+
+  .AboutMeTextPerentDiv {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .AboutMeText {
+    font-size: 36px;
+  }
+
+  .AccordionDiv {
+    margin-top: 60px;
+  }
+
+  .AccordionDiv {
+    padding: 0 20px;
+  }
+
+  .EducationDetailMainDiv {
+    display: block;
+  }
+
+  .clgLogoDiv {
+    display: flex;
+    justify-content: center;
+  }
+
+  .clgLogo {
+    height: 110px;
+    margin-bottom: 10px;
+  }
+
+  .bubble {
+    width: 100%;
+    padding: 15px 10px;
+    height: auto;
+  }
+
+  .bubble1::before {
+    display: none;
+  }
+
+  .clgName {
+    font-size: 16px;
+  }
+
+  .courceName {
+    font-size: 14px;
+  }
+
+  .work {
+    font-size: 18px;
+  }
+
+  .compantName {
+    font-size: 16px;
+  }
+
+  .whatIDO {
+    font-size: 14px;
+  }
+
+  .ExperienceDiv {
+    padding: 10px;
+  }
+}
