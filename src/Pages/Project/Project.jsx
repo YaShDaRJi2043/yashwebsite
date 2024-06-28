@@ -1,7 +1,21 @@
 import React from "react";
 import "./Project.css";
+import { Tilt } from "react-tilt";
+import Footer from "../../components/Footer/Footer";
 
 const Project = () => {
+  const defaultOptions = {
+    reverse: false,
+    max: 15,
+    perspective: 2500,
+    scale: 0,
+    speed: 1000,
+    transition: true,
+    axis: null,
+    reset: true,
+    easing: "cubic-bezier(.03,.98,.52,.99)",
+  };
+
   return (
     <>
       <div className="FirstDiv">
@@ -18,16 +32,35 @@ const Project = () => {
         </div>
       </div>
 
-      <div className="projectDiv">
-        <div className="projectName">cartNow</div>
-        <div className="projectDiscription">
-          ⚡ It is E-commerce website with admin panel.
-        </div>
-        <div className="lenLogoDiv">
-          <img src="/react.svg" alt="img" className="lenLogo" />
-          <img src="/nodejs.svg" alt="img" className="lenLogo" />
-          <img src="/mongodb.svg" alt="img" className="lenLogo" />
-        </div>
+      <div options={defaultOptions} className="projectContainer">
+        <Tilt className="projectDiv">
+          <div className="projectName">cartNow</div>
+          <div className="projectDiscription">
+            ⚡ It is E-commerce website with admin panel.
+          </div>
+          <div className="lenLogoDiv">
+            <img src="/react.svg" alt="img" className="lenLogo" />
+            <img src="/nodejs.svg" alt="img" className="lenLogo" />
+            <img src="/mongodb.svg" alt="img" className="lenLogo" />
+          </div>
+        </Tilt>
+
+        <Tilt className="projectDiv">
+          <div className="projectName">SillyStorage</div>
+          <div className="projectDiscription">
+            ⚡ It is Image & video storage website.
+          </div>
+          <div className="lenLogoDiv">
+            <img src="/react.svg" alt="img" className="lenLogo" />
+            <img src="/nodejs.svg" alt="img" className="lenLogo" />
+            <img src="/mongodb.svg" alt="img" className="lenLogo" />
+            <img src="/firebase.svg" alt="img" className="lenLogo" />
+          </div>
+        </Tilt>
+      </div>
+
+      <div>
+        <Footer />
       </div>
     </>
   );

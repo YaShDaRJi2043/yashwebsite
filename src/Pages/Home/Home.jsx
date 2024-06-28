@@ -2,17 +2,10 @@ import React from "react";
 import "./Home.css";
 import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import {
-  faFacebookF,
-  faInstagram,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
 import Footer from "../../components/Footer/Footer";
+import ContactIcon from "../../components/contactIcon/ContactIcon";
 
 const Home = () => {
-  library.add(faFacebookF, faInstagram, faGithub);
   return (
     <>
       <div className="main_home">
@@ -39,23 +32,7 @@ const Home = () => {
             </div>
 
             <div style={{ marginTop: "30px" }}>
-              <a href="https://www.facebook.com/yash.darji.562">
-                <FontAwesomeIcon
-                  icon="fa-brands fa-facebook-f"
-                  className="fb"
-                />
-              </a>
-
-              <a href="https://www.instagram.com/_yash_darji__/">
-                <FontAwesomeIcon
-                  icon="fa-brands fa-instagram"
-                  className="insta"
-                />
-              </a>
-
-              <a href="https://github.com/YaShDaRJi2043">
-                <FontAwesomeIcon icon="fa-brands fa-github" className="git" />
-              </a>
+              <ContactIcon />
               <div>
                 <NavLink
                   to="/project"

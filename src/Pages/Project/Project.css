@@ -30,8 +30,21 @@
   line-height: 30px;
 }
 
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 50px;
+  margin: 70px 100px;
+  cursor: pointer;
+}
+
 .projectDiv {
   background-color: whitesmoke;
+  padding: 15px;
+
+  &:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  }
 }
 
 .projectName {
@@ -57,4 +70,42 @@
   max-height: 50px;
   width: 15%;
   margin-top: 40px;
+}
+
+@media (max-width: 970px) {
+  .FirstDiv {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .projectImg {
+    height: 180px;
+    width: 100%;
+  }
+
+  .projectTextPerentDiv {
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 30px;
+  }
+
+  .projectName {
+    font-size: 24px;
+  }
+
+  .projectDiscription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 622px) {
+  .projectContainer {
+    display: block;
+    margin: 70px 30px;
+  }
+
+  .projectDiv {
+    margin-top: 30px;
+  }
 }
