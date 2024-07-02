@@ -35,15 +35,18 @@
   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
   gap: 50px;
   margin: 70px 100px;
-  cursor: pointer;
 }
 
 .projectDiv {
   background-color: whitesmoke;
   padding: 15px;
+  transition-duration: 0.5s;
+  border-radius: 20px;
+  cursor: pointer;
 
   &:hover {
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    scale: 1.15;
   }
 }
 
@@ -89,6 +92,11 @@
     padding: 0 20px;
     margin-top: 30px;
   }
+  .projectDiv {
+    &:hover {
+      scale: 1;
+    }
+  }
 
   .projectName {
     font-size: 24px;
@@ -107,5 +115,10 @@
 
   .projectDiv {
     margin-top: 30px;
+
+    &:hover {
+      box-shadow: none;
+      scale: 1;
+    }
   }
 }

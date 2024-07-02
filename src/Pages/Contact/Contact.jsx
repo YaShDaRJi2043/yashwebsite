@@ -6,31 +6,33 @@ import Footer from "../../components/Footer/Footer";
 const Contact = () => {
   return (
     <>
-      <div className="FirstDiv">
-        <div>
-          <img src="./contact.svg" alt="" className="contactImg" />
-        </div>
-
-        <div className="contactTextPerentDiv">
-          <div className="contactText">Contact Me</div>
-          <div className="contactLineText">
-            I am available on almost every social media. You can Contact me, I
-            can help you with React and Node.
-          </div>
-
+      <div className="mainDiv">
+        <div className="FirstDiv">
           <div>
-            <ContactIcon />
+            <img src="./contact.svg" alt="" className="contactImg" />
           </div>
 
-          <div className="ResumeBtnDiv">
-            <a
-              href="https://drive.google.com/file/d/1Qq3u60B05tSqSdDL2oFms8IQfHbo462U/view?usp=drive_link"
-              target="_blank"
-              rel="noreferrer"
-              className="ResumeBtn"
-            >
-              See My Resume
-            </a>
+          <div className="contactTextPerentDiv">
+            <div className="contactText">Contact Me</div>
+            <div className="contactLineText">
+              I am available on almost every social media. You can Contact me, I
+              can help you with React and Node.
+            </div>
+
+            <div>
+              <ContactIcon />
+            </div>
+
+            <div className="ResumeBtnDiv">
+              <a
+                href="https://drive.google.com/file/d/1Qq3u60B05tSqSdDL2oFms8IQfHbo462U/view?usp=drive_link"
+                target="_blank"
+                rel="noreferrer"
+                className="ResumeBtn"
+              >
+                See My Resume
+              </a>
+            </div>
           </div>
         </div>
       </div>

@@ -1,21 +1,8 @@
 import React from "react";
 import "./Project.css";
-import { Tilt } from "react-tilt";
 import Footer from "../../components/Footer/Footer";
 
 const Project = () => {
-  const defaultOptions = {
-    reverse: false,
-    max: 15,
-    perspective: 2500,
-    scale: 0,
-    speed: 1000,
-    transition: true,
-    axis: null,
-    reset: true,
-    easing: "cubic-bezier(.03,.98,.52,.99)",
-  };
-
   return (
     <>
       <div className="FirstDiv">
@@ -32,8 +19,8 @@ const Project = () => {
         </div>
       </div>
 
-      <div options={defaultOptions} className="projectContainer">
-        <Tilt className="projectDiv">
+      <div className="projectContainer">
+        <div className="projectDiv">
           <div className="projectName">cartNow</div>
           <div className="projectDiscription">
             ⚡ It is E-commerce website with admin panel.
@@ -43,9 +30,9 @@ const Project = () => {
             <img src="/nodejs.svg" alt="img" className="lenLogo" />
             <img src="/mongodb.svg" alt="img" className="lenLogo" />
           </div>
-        </Tilt>
+        </div>
 
-        <Tilt className="projectDiv">
+        <div className="projectDiv">
           <div className="projectName">SillyStorage</div>
           <div className="projectDiscription">
             ⚡ It is Image & video storage website.
@@ -56,7 +43,7 @@ const Project = () => {
             <img src="/mongodb.svg" alt="img" className="lenLogo" />
             <img src="/firebase.svg" alt="img" className="lenLogo" />
           </div>
-        </Tilt>
+        </div>
       </div>
 
       <div>

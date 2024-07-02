@@ -51,6 +51,10 @@
 }
 
 @media (max-width: 970px) {
+  .mainDiv {
+    height: 80vh;
+  }
+
   .FirstDiv {
     display: flex;
     flex-direction: column;

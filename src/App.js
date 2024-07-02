@@ -10,7 +10,7 @@ import Contact from "./Pages/Contact/Contact";
 function App() {
   return (
     <>
-      <div>
+      <div className="mainDiv">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
