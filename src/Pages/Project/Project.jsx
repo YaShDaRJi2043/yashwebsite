@@ -23,7 +23,7 @@ const Project = () => {
         <div className="projectDiv">
           <div className="projectName">cartNow</div>
           <div className="projectDiscription">
-            ⚡ It is E-commerce website with admin panel.
+            ⚡ It is E-commerce web application with admin panel.
           </div>
           <div className="lenLogoDiv">
             <img src="/react.svg" alt="img" className="lenLogo" />
@@ -35,7 +35,20 @@ const Project = () => {
         <div className="projectDiv">
           <div className="projectName">SillyStorage</div>
           <div className="projectDiscription">
-            ⚡ It is Image & video storage website.
+            ⚡ It is Image & video storage web application.
+          </div>
+          <div className="lenLogoDiv">
+            <img src="/react.svg" alt="img" className="lenLogo" />
+            <img src="/nodejs.svg" alt="img" className="lenLogo" />
+            <img src="/mongodb.svg" alt="img" className="lenLogo" />
+            <img src="/firebase.svg" alt="img" className="lenLogo" />
+          </div>
+        </div>
+
+        <div className="projectDiv">
+          <div className="projectName">Prime Estate</div>
+          <div className="projectDiscription">
+            ⚡ It is real estate web application.
           </div>
           <div className="lenLogoDiv">
             <img src="/react.svg" alt="img" className="lenLogo" />
