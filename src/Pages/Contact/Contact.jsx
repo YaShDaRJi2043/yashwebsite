@@ -25,7 +25,7 @@ const Contact = () => {
 
             <div className="ResumeBtnDiv">
               <a
-                href="https://drive.google.com/file/d/1yA5bITcUnfFDn7nQVF9vuindNOhtY0An/view?usp=sharing"
+                href="https://drive.google.com/file/d/1O60GRvCpBmOjAQfpj3tHD1NdB0cCUTmZ/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 className="ResumeBtn"
