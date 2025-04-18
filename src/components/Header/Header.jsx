@@ -7,16 +7,12 @@ import { NavLink } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { ListItem } from "@mui/material";
 
 const Header = () => {
   const [state, setState] = React.useState({
     left: false,
   });
-  library.add(faBars);
 
   const toggleDrawer = (anchor, open) => (event) => {
     if (
@@ -67,11 +63,10 @@ const Header = () => {
           <div className="slider">
             {["left"].map((anchor) => (
               <React.Fragment key={anchor}>
-                <FontAwesomeIcon
-                  icon="fa-solid fa-bars"
+                <i
+                  className="fa fa-fas fa-bars menu"
                   onClick={toggleDrawer(anchor, true)}
-                  className="menu"
-                />
+                ></i>
                 <Drawer
                   anchor={anchor}
                   open={state[anchor]}

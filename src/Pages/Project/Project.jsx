@@ -23,6 +23,7 @@ const Project = () => {
         <a
           href="https://cart-now-frontrnd.vercel.app/"
           target="_blank"
+          rel="noreferrer"
           className="projectDiv"
         >
           <div className="projectName">cartNow</div>
@@ -39,6 +40,7 @@ const Project = () => {
         <a
           href="https://drive-front-end.vercel.app/"
           target="_blank"
+          rel="noreferrer"
           className="projectDiv"
         >
           <div className="projectName">SillyStorage</div>
@@ -56,6 +58,7 @@ const Project = () => {
         <a
           href="https://mern-estate-main-beta.vercel.app/"
           target="_blank"
+          rel="noreferrer"
           className="projectDiv"
         >
           <div className="projectName">Prime Estate</div>

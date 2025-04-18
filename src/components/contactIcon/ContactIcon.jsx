@@ -1,12 +1,5 @@
 import React from "react";
 import "./ContactIcon.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGithub,
-  faLinkedinIn,
-  faGoogle,
-  faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
 
 const ContactIcon = () => {
   return (
@@ -18,7 +11,7 @@ const ContactIcon = () => {
           rel="noreferrer"
           className="AppsIcons"
         >
-          <FontAwesomeIcon icon={faGithub} className="commonCss GitIcon" />
+          <i className="fa fa-fab fa-github commonCss GitIcon"></i>
         </a>
 
         <a
@@ -27,7 +20,7 @@ const ContactIcon = () => {
           rel="noreferrer"
           className="AppsIcons"
         >
-          <FontAwesomeIcon icon={faLinkedinIn} className="commonCss LinkedIn" />
+          <i className="fa fa-fab fa-linkedin commonCss LinkedIn"></i>
         </a>
 
         <a
@@ -36,16 +29,7 @@ const ContactIcon = () => {
           rel="noreferrer"
           className="AppsIcons"
         >
-          <FontAwesomeIcon icon={faGoogle} className="commonCss Google" />
-        </a>
-
-        <a
-          href="https://www.instagram.com/_yash_darji__?igsh=MTZwOHhwajRieTIxeQ=="
-          target="_blank"
-          rel="noreferrer"
-          className="AppsIcons"
-        >
-          <FontAwesomeIcon icon={faInstagram} className="commonCss Instagram" />
+          <i className="fa fa-far fa-envelope commonCss Google"></i>
         </a>
       </div>
     </>
