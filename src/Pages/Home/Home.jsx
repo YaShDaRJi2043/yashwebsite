@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import { NavLink } from "react-router-dom";
 import Typewriter from "typewriter-effect";
-import Footer from "../../components/Footer/Footer";
 import ContactIcon from "../../components/contactIcon/ContactIcon";
 
 const Home = () => {
@@ -16,7 +15,7 @@ const Home = () => {
               style={{ fontSize: "30px", color: "#836be2" }}
               className="fs-3"
             >
-              YASH Developer
+              YASH's Dev Portfolio
             </div>
             <div style={{ marginTop: "10px" }} className="fs-4">
               I am
@@ -68,21 +67,13 @@ const Home = () => {
 
           <div className="introLenTextDiv">
             <div className="introLenText">
-              ⚡ Building responsive website frontEnd using React
+              ⚡ Developing responsive front-end websites with React.js.
             </div>
             <div className="introLenText">
-              ⚡ Creating application backend in NodeJs & ExpressJs
+              ⚡ Building back-end applications using Node.js and Express.js.
             </div>
           </div>
         </div>
-
-        <div className="footer1">
-          <Footer />
-        </div>
-      </div>
-
-      <div className="footer2">
-        <Footer />
       </div>
     </>
   );

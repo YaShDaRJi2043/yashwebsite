@@ -1,126 +1,190 @@
 import React from "react";
-import "./About.css";
 import Accordion from "react-bootstrap/Accordion";
-import Footer from "../../components/Footer/Footer";
+import { Container, Row, Col, Image, Card } from "react-bootstrap";
 
 const About = () => {
   return (
-    <>
-      <div className="mainDiv">
-        <div className="FirstDiv">
-          <div>
-            <img src="/mirror.svg" alt="img" className="mirrorImg" />
-          </div>
+    <Container className="py-5">
+      {/* About Section */}
+      <Row className="justify-content-center align-items-center mb-5">
+        <Col xs={12} md={6} className="text-center mb-4 mb-md-0">
+          <Image
+            src="/mirror.svg"
+            alt="img"
+            fluid
+            className="mb-4 p-5 p-md-0"
+          />
+        </Col>
+        <Col xs={12} md={6} className="text-center p-md-5">
+          <h2 className="mb-3" style={{ color: "#836be2", fontSize: "36px" }}>
+            About Me
+          </h2>
+          <p
+            style={{
+              color: "#5a4f82c5",
+              fontWeight: "600",
+              fontSize: "18px",
+              lineHeight: "30px",
+            }}
+          >
+            I'm a FULL stack developer who loves building websites that look
+            great and work even better. I enjoy getting creative with design and
+            making sure everything runs smoothly.
+          </p>
+        </Col>
+      </Row>
 
-          <div className="AboutMeTextPerentDiv">
-            <div className="AboutMeText">About Me</div>
-            <div className="AboutMeLineText">
-              I'm a MERN stack developer who loves building websites that look
-              great and work even better. I enjoy getting creative with design
-              and making sure everything runs smoothly.
-            </div>
-          </div>
-        </div>
-
-        <div className="AccordionDiv">
-          <Accordion>
-            <Accordion.Item eventKey="0" className="Accordion">
-              <Accordion.Header>Education</Accordion.Header>
-              <Accordion.Body>
-                <div className="EducationDetailMainDiv">
-                  <div className="clgLogoDiv">
-                    <img src="/GUNI.jpeg" alt="img" className="clgLogo" />
-                  </div>
-
-                  <div className="bubble">
-                    <div className="bubble1">
-                      <div className="clgName">Ganpat University (GUNI)</div>
-                      <div className="clgYear">2023 - Present</div>
-
-                      <div className="courceName">
+      {/* Accordion Section */}
+      <Accordion>
+        <Accordion.Item eventKey="0">
+          <Accordion.Header>Education</Accordion.Header>
+          <Accordion.Body>
+            {/* Education 1 */}
+            <Row className="mb-4 align-items-center">
+              <Col xs={12} md={2} className="text-center mb-3">
+                <Image src="/GUNI.jpeg" alt="GUNI" roundedCircle width="150" />
+              </Col>
+              <Col>
+                <Card className="bg-light p-3">
+                  <Card.Body>
+                    <Card.Title>Ganpat University (GUNI)</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      2023 - 2025
+                    </Card.Subtitle>
+                    <Card.Text>
+                      <span style={{ color: "#836be2", fontWeight: "600" }}>
                         Master of Computer Applications
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      </span>
+                      <br />
+                      <span className="text-muted">7.84 CGPA</span>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
 
-                <div className="EducationDetailMainDiv mt-3">
-                  <div className="clgLogoDiv">
-                    <img src="/PRESIDENT.png" alt="img" className="clgLogo" />
-                  </div>
-
-                  <div className="bubble">
-                    <div className="bubble1">
-                      <div className="clgName">
-                        President Institute of Computer Application (PICA)
-                      </div>
-                      <div className="clgYear">2020 - 2023</div>
-
-                      <div className="courceName">
+            {/* Education 2 */}
+            <Row className="align-items-center">
+              <Col xs={12} md={2} className="text-center mb-3">
+                <Image
+                  src="/PRESIDENT.png"
+                  alt="PICA"
+                  roundedCircle
+                  width="150"
+                />
+              </Col>
+              <Col>
+                <Card className="bg-light p-3">
+                  <Card.Body>
+                    <Card.Title>
+                      President Institute of Computer Application (PICA)
+                    </Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">
+                      2020 - 2023
+                    </Card.Subtitle>
+                    <Card.Text>
+                      <span style={{ color: "#836be2", fontWeight: "600" }}>
                         Bachelor of Computer Applications
-                      </div>
-                      <div className="clgYear">7.55 CGPA</div>
-                    </div>
-                  </div>
-                </div>
-              </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1" className="Accordion">
-              <Accordion.Header>Experience</Accordion.Header>
-              <Accordion.Body>
-                <div className="ExperienceDiv">
-                  <div className="work">MERN Stack Project Training</div>
-                  <div className="compantName">VmapCode</div>
-                  <div className="mt-4">
-                    <div className="whatIDO">
-                      ⚡ Learned to build interactive and responsive user
-                      interfaces using React.js.
-                    </div>
-                    <div className="whatIDO">
-                      ⚡ Developed strong server-side skills by working with
-                      Node.js and Express.js to create robust backend
-                      applications.
-                    </div>
-                    <div className="whatIDO">
-                      ⚡ Acquired knowledge in database design and management,
-                      with a focus on MongoDB, for storing and retrieving data
-                      in web applications.
-                    </div>
-                  </div>
-                </div>
+                      </span>
+                      <br />
+                      <span className="text-muted">7.55 CGPA</span>
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            </Row>
+          </Accordion.Body>
+        </Accordion.Item>
 
-                <div className="ExperienceDiv mt-4">
-                  <div className="work">ReactJS Developer</div>
-                  <div className="compantName">
-                    WebEarl Technologies Private Limited
+        {/* Experience Section */}
+        <Accordion.Item eventKey="1">
+          <Accordion.Header>Experience</Accordion.Header>
+          <Accordion.Body>
+            {/* Experience 1 */}
+            <Card className="bg-light mb-4 p-3">
+              <Card.Body>
+                <Card.Title>MERN Stack Project Training</Card.Title>
+                <Card.Subtitle
+                  className="mb-2"
+                  style={{
+                    color: "#836be2",
+                    fontWeight: "700",
+                    fontSize: "18px",
+                  }}
+                >
+                  Technource Pvt. Ltd.
+                </Card.Subtitle>
+                <div
+                  style={{
+                    color: "#5a4f82c5",
+                    fontWeight: 600,
+                    lineHeight: "26px",
+                  }}
+                >
+                  <div>
+                    ⚡ Developed scalable web applications using React.js and
+                    Node.js, ensuring a seamless user experience.
                   </div>
-                  <div className="mt-4">
-                    <div className="whatIDO">
-                      ⚡ Experienced in developing engaging website frontends,
-                      utilizing React.js to create dynamic and user friendly
-                      interfaces.
-                    </div>
-                    <div className="whatIDO">
-                      ⚡ Proficient in API calls and integrating data from
-                      backend services to enhance website functionality and user
-                      experience.
-                    </div>
-                    <div className="whatIDO">
-                      ⚡ Proficient in designing and implementing backend APIs
-                      for websites using Node.js and Express.
-                    </div>
+                  <div>
+                    ⚡ Integrated RESTful APIs and optimized performance with
+                    MySQL for efficient database management.
+                  </div>
+                  <div>
+                    ⚡ Proactively debugged and resolved issues, improving
+                    system stability and performance.
+                  </div>
+                  <div>
+                    ⚡ Collaborated with teams to enhance code quality,
+                    scalability, and maintainability.
                   </div>
                 </div>
-              </Accordion.Body>
-            </Accordion.Item>
-          </Accordion>
-        </div>
-      </div>
+              </Card.Body>
+            </Card>
 
-      <div>
-        <Footer />
-      </div>
-    </>
+            {/* Experience 2 */}
+            <Card className="bg-light p-3">
+              <Card.Body>
+                <Card.Title>ReactJS Developer</Card.Title>
+                <Card.Subtitle
+                  className="mb-2"
+                  style={{
+                    color: "#836be2",
+                    fontWeight: "700",
+                    fontSize: "18px",
+                  }}
+                >
+                  WebEarl Technologies Pvt. Ltd.
+                </Card.Subtitle>
+                <div
+                  style={{
+                    color: "#5a4f82c5",
+                    fontWeight: 600,
+                    lineHeight: "26px",
+                  }}
+                >
+                  <div>
+                    ⚡ Participated in daily scrums, providing updates and
+                    aligning with project goals in an agile environment.
+                  </div>
+                  <div>
+                    ⚡ Enhanced application functionality to meet client needs,
+                    ensuring smooth system integration and improved UX.
+                  </div>
+                  <div>
+                    ⚡ Refactored React.js components, improving code structure,
+                    maintainability, and performance.
+                  </div>
+                  <div>
+                    ⚡ Integrated RESTful APIs with React.js and developed
+                    scalable backend APIs using Node.js and Express.js.
+                  </div>
+                </div>
+              </Card.Body>
+            </Card>
+          </Accordion.Body>
+        </Accordion.Item>
+      </Accordion>
+    </Container>
   );
 };
 

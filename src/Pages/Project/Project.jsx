@@ -1,6 +1,5 @@
 import React from "react";
 import "./Project.css";
-import Footer from "../../components/Footer/Footer";
 
 const Project = () => {
   return (
@@ -12,9 +11,11 @@ const Project = () => {
         <div className="projectTextPerentDiv">
           <div className="projectText">Projects</div>
           <div className="projectLineText">
-            In my work, I use a bunch of new tech tools. The MERN stack, which
-            stands for MongoDB, Express.js, React, and Node.js, is where I
-            excel.
+            <div className="projectLineText">
+              I develop modern web applications using the MERN stack: MongoDB,
+              Express.js, React, and Node.js, with a focus on building
+              efficient, scalable, and user-friendly solutions.
+            </div>
           </div>
         </div>
       </div>
@@ -28,8 +29,11 @@ const Project = () => {
         >
           <div className="projectName">cartNow</div>
           <div className="projectDiscription">
-            ⚡ It is E-commerce web application with admin panel.
+            ⚡ A comprehensive e-commerce platform with an integrated admin
+            panel, designed to manage product listings, customer interactions,
+            and order processing efficiently.
           </div>
+
           <div className="lenLogoDiv">
             <img src="/react.svg" alt="img" className="lenLogo" />
             <img src="/nodejs.svg" alt="img" className="lenLogo" />
@@ -45,7 +49,8 @@ const Project = () => {
         >
           <div className="projectName">SillyStorage</div>
           <div className="projectDiscription">
-            ⚡ It is Image & video storage web application.
+            ⚡ A cloud-based platform for secure image and video storage,
+            offering seamless file uploads, management, and sharing features.
           </div>
           <div className="lenLogoDiv">
             <img src="/react.svg" alt="img" className="lenLogo" />
@@ -63,7 +68,9 @@ const Project = () => {
         >
           <div className="projectName">Prime Estate</div>
           <div className="projectDiscription">
-            ⚡ It is real estate web application.
+            ⚡ A feature-rich real estate platform that allows users to browse,
+            buy, and sell properties with ease, offering advanced search and
+            filtering options for a seamless experience.
           </div>
           <div className="lenLogoDiv">
             <img src="/react.svg" alt="img" className="lenLogo" />
@@ -73,10 +80,6 @@ const Project = () => {
             <img src="/firebase.svg" alt="img" className="lenLogo" />
           </div>
         </a>
-      </div>
-
-      <div>
-        <Footer />
       </div>
     </>
   );

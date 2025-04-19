@@ -1,11 +1,22 @@
 import React from "react";
-import "./Footer.css";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <>
-      <div className="FooterText">Made with ❤️ by Yash Darji</div>
-    </>
+    <footer className="py-4">
+      <Container>
+        <Row>
+          <Col className="text-center">
+            <div
+              className="fw-bold fs-5"
+              style={{ color: "rgba(131, 107, 226, 0.749)" }}
+            >
+              Made with ❤️ by Yash Darji
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </footer>
   );
 };
 

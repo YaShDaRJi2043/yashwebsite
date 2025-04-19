@@ -1,78 +1,119 @@
+/* Main container */
+.contactMainDiv {
+  padding: 20px;
+}
+
+/* FirstDiv Layout */
 .FirstDiv {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 100px;
   margin-bottom: 10%;
+  flex-wrap: wrap; /* Allow wrapping on small screens */
 }
 
+/* Contact Image */
 .contactImg {
-  height: 300px;
+  max-width: 100%;
+  height: auto;
+  max-height: 300px; /* Maintain a reasonable height */
 }
 
+/* Contact Text Parent Div */
 .contactTextPerentDiv {
-  width: 35%;
+  width: 100%;
+  max-width: 600px; /* Set max width for better readability */
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 0 20px;
 }
 
+/* Main Heading */
 .contactText {
   font-size: 46px;
   font-weight: 600;
   color: #836be2;
+  margin-bottom: 10px;
 }
 
+/* Subheading */
 .contactLineText {
   font-size: 18px;
   font-weight: 600;
-  margin-top: 10px;
   color: #5a4f82c5;
-  line-height: 30px;
+  line-height: 1.8;
+  margin-bottom: 20px;
 }
 
+/* Resume Button Container */
 .ResumeBtnDiv {
   margin-top: 25px;
 }
 
+/* Resume Button Styling */
 .ResumeBtn {
   text-decoration: none;
-  padding: 10px 30px 15px;
+  padding: 12px 30px;
   background-color: #836be2;
   color: white;
   border-radius: 5px;
+  font-size: 16px;
   transition-duration: 0.4s;
-
-  &:hover {
-    background-color: white;
-    color: #836be2;
-    border: solid thin #836be2;
-  }
+  display: inline-block;
 }
 
-@media (max-width: 970px) {
-  .mainDiv {
-    height: 80vh;
-  }
+.ResumeBtn:hover {
+  background-color: white;
+  color: #836be2;
+  border: solid thin #836be2;
+}
 
+/* Media Query for screens smaller than 970px */
+@media (max-width: 970px) {
   .FirstDiv {
-    display: flex;
     flex-direction: column;
     margin-top: 40px;
+    justify-content: center;
   }
 
   .contactImg {
-    height: 180px;
-    width: 100%;
-  }
-
-  .contactTextPerentDiv {
-    width: 100%;
-    padding: 0 20px;
-    margin-top: 30px;
+    max-height: 180px;
+    margin-bottom: 20px;
   }
 
   .contactText {
     font-size: 36px;
+  }
+
+  .contactLineText {
+    font-size: 16px;
+  }
+
+  .ResumeBtn {
+    font-size: 14px;
+    padding: 10px 25px;
+  }
+}
+
+/* Media Query for screens smaller than 622px */
+@media (max-width: 622px) {
+  .FirstDiv {
+    margin-bottom: 50px;
+  }
+
+  .contactText {
+    font-size: 28px;
+  }
+
+  .contactLineText {
+    font-size: 16px;
+  }
+
+  .ResumeBtn {
+    padding: 8px 20px;
+    font-size: 14px;
   }
 }
