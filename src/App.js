@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "font-awesome/css/font-awesome.min.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Page from "./Page";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import Project from "./Pages/Project/Project";
@@ -13,10 +14,38 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/project" element={<Project />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route
+          path="/"
+          element={
+            <Page title="YASH | Home">
+              <Home />
+            </Page>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <Page title="YASH | About Us">
+              <About />
+            </Page>
+          }
+        />
+        <Route
+          path="/project"
+          element={
+            <Page title="YASH | Projects">
+              <Project />
+            </Page>
+          }
+        />
+        <Route
+          path="/contact"
+          element={
+            <Page title="YASH | Contact">
+              <Contact />
+            </Page>
+          }
+        />
       </Routes>
       <Footer />
     </>
