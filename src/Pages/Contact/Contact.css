@@ -1,16 +1,15 @@
 /* Main container */
 .contactMainDiv {
-  padding: 20px;
+  padding: 20px 100px;
 }
 
-/* FirstDiv Layout */
-.FirstDiv {
-  display: flex;
-  justify-content: space-between;
+/* ContactFirstDiv Layout */
+.ContactFirstDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 10%;
-  flex-wrap: wrap; /* Allow wrapping on small screens */
+  gap: 40px;
+  margin: 100px 0 10%;
 }
 
 /* Contact Image */
@@ -73,10 +72,18 @@
 
 /* Media Query for screens smaller than 970px */
 @media (max-width: 970px) {
-  .FirstDiv {
-    flex-direction: column;
+  .contactMainDiv {
+    padding: 0;
+  }
+
+  .ContactFirstDiv {
+    grid-template-columns: 1fr;
     margin-top: 40px;
-    justify-content: center;
+    text-align: center;
+  }
+
+  .contactTextPerentDiv {
+    margin: auto;
   }
 
   .contactImg {
@@ -100,7 +107,7 @@
 
 /* Media Query for screens smaller than 622px */
 @media (max-width: 622px) {
-  .FirstDiv {
+  .ContactFirstDiv {
     margin-bottom: 50px;
   }
 

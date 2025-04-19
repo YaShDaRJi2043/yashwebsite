@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <>
       <div className="contactMainDiv">
-        <div className="FirstDiv">
+        <div className="ContactFirstDiv">
           <div>
             <img src="./contact.svg" alt="" className="contactImg" />
           </div>
