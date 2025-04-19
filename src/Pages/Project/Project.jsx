@@ -4,7 +4,7 @@ import "./Project.css";
 const Project = () => {
   return (
     <>
-      <div className="FirstDiv">
+      <div className="ProjectFirstDiv">
         <div>
           <img src="/project.svg" alt="img" className="projectImg" />
         </div>
